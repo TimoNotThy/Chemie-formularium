@@ -1,0 +1,107 @@
+\documentclass[a4paper,kul]{kulakarticle} %options: kul or kulak (default)
+
+\usepackage[utf8]{inputenc}
+\usepackage[dutch]{babel}
+
+\date{Academiejaar 2024 -- 2025}
+\address{
+	Industriële Ingenieurswetenschappen \\
+	Chemie \\
+	Arn Mignon}
+\title{Formularium}
+\author{\href{https://github.com/TimoNotThy}{Timo Vandevenne}}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{siunitx}
+\usepackage{flafter} 
+\usepackage{pdfpages}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{titlesec}
+\usepackage[shortlabels]{enumitem}
+\usepackage{gensymb}
+\usepackage{upgreek}
+\usepackage{bm}
+
+\setcounter{secnumdepth}{4}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\hypersetup{
+	pdftitle={Formularium Chemie},
+	pdfsubject={},
+	pdfauthor={Timo Vandevenne},
+	pdfkeywords={}
+}
+\newcommand{\varitem}[2]{\textbf{\(\mathbf{#1}\)} #2}
+
+\begin{document}
+\maketitle
+\newline
+
+
+\begin{center}
+	\begin{tabular}{>{$}l<{$} | p{0.4\textwidth}} % Left column for formula, right for variables and explanations
+		\textbf{Formula} & \textbf{Variables and Explanation} \\
+		\hline
+		PV=nRT
+		& \varitem{P}{Druk} \\
+		& \varitem{V}{Volume} \\
+		& \varitem{R}{Gasconstante} \\
+		& \varitem{T}{Temperatuur} \\
+		
+		\hline% \textbf{Thermochemie} \\
+		
+		\Delta U=q+w 
+		& \varitem{\Delta U}{Verandering van interne energie} \\
+		& \varitem{q}{warmteuitwisseling met omgeving \newline (q>0: warmte van omgeving in systeem)} \\
+		& \varitem{w}{Arbeid verricht op/door het systeem \newline (w>0: arbeid op systeem)} \\
+		
+		w=-P\Delta V 
+		& \varitem{\Delta V}{Volumeverandering} \\
+		
+		\text{Wet van Hess:}
+		& \varitem{\Delta H^0_{rxn}}{Reactieenthalpie} \\
+		\Delta H^0_{rxn} = \sum n\Delta H^0_f(prod.) - \sum m\Delta H^0_f(reag.) 
+		& ($\Delta H^0_{rxn}$>0: endotherme reactie) \\ %Uitleg bij vorige maar appart gezet voor layout purposes
+		& \varitem{H^0_f}{Standaardvormingsenthalpie} \\
+		& \varitem{n, m}{coefficiënten in reactievergelijking} \\
+		
+		q=ms \Delta T 
+		& \varitem{m}{massa [g]} \\
+		& \varitem{s}{Specifieke warmte [$\frac{J}{g \degree C}$]} \\
+		
+		
+		q=C \Delta T 
+		& \varitem{\Delta T}{Temperatuurverandering} \\
+		& \varitem{C}{Warmtecapaciteit} \\
+		q_{sys}=0 \Leftrightarrow q_{rxn}+q_{cal}+q_{opl}=0 \\
+		q_{rxn}=n\Delta H^0_{rxn} \\
+		%Kwantumtheorie
+		
+		\hline
+		
+		E=h \upnu = h \cfrac{c}{\lambda} 
+		& \varitem{E}{Energie [J]} \\
+		& \varitem{h}{constante van Planck = $6.62 \cdot 10^{-34}$Js} \\
+		& \varitem{\bm{\upnu}}{frequentie [Hz]} \\
+		& \varitem{c}{Lichtsnelheid = $3 \cdot 10^8 \frac{m}{s}$} \\
+		& \varitem{\bm{\lambda}}{Golflengte [m]} \\
+		
+		E_{kin,e^-}=h \upnu - W &
+		\varitem{W}{Werkfunctie: maat voor hoe sterk $e^{-}$ in metaal worden vastgehouden} \\
+		
+		\text{De Broglie: }
+		\lambda=\frac{h}{p} = \frac{h}{mu}
+		& \varitem{p}{Impuls [$\frac{kg \cdot m}{s}$]} \\
+		& \varitem{m}{Massa bewegend deeltje [kg]} \\
+		& \varitem{u}{Snelheid} \\
+		
+	\end{tabular}
+\end{center}
+
+\end{document}
