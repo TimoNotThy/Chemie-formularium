@@ -126,7 +126,7 @@ Dit document is nog niet klaar, als we nieuwe formules zien zal ik deze toevoege
 	\newpage
 	\begin{tabular}{>{$}l<{$} | p{0.55\textwidth}}		
 		\hline
-				%colligatieve eigenschappen
+		%colligatieve eigenschappen
 		\Delta T_b=iK_bm
 		& \varitem{\Delta T_b}{Kookpuntsverhoging} \\
 		\Delta T_f=iK_fm
@@ -141,7 +141,7 @@ Dit document is nog niet klaar, als we nieuwe formules zien zal ik deze toevoege
 		& \varitem{\Delta P}{Dampdrukverlaging} \\
 		%& \varitem{P^0}{Druk} \\
 		
-		%Reactiesnelheid
+		%Kinetica
 		\hline
 		v=k[A]^x[B]^y
 		& aA+bB $\rightleftharpoons$ cC+dD \\
@@ -152,27 +152,49 @@ Dit document is nog niet klaar, als we nieuwe formules zien zal ik deze toevoege
 		& \textbf{x}=a, \textbf{y}=b indien elementaire stap \\
 		k=Ae^{\frac{-\! Ea}{RT}}
 		& \varitem{E_a}{Activeringsenergie [kJ/mol]} \\
+		
+		%Chemisch evenwicht
+		\hline
 		K=\dfrac{[C]^c[D]^d}{[A]^a[B]^b}
 		& \varitem{K}{Evenwichtsconstante (K>1: Evenwicht naar rechts)} \\
 		& \varitem{\bm{[X]}}{Concentratie van stof X [M]\! =\! [mol/l]} \\
 		& \varitem{Q}{Reactieconstante, K met actuele concentraties} \\
 		& (Q>K: systeem naar links voor evenwicht) \\
 		
-		%Niet echt een formule maar wel belangrijk
-		\text{Principe van Le Châtelier}
-		& Systeem compenseert uitwendige stress gedeeltelijk \\
-		& $\bullet$ Concentratieverandering \\
-		& $\bullet$ Druk \& volumeverandering \\
-		& $\bullet$ Temperatuursverandering $\rightarrow$ K verandert \\
-		& $\bullet$ Katalysator \& inert gas hebben geen invloed \\
-		
-
+			%Niet echt een formule maar wel belangrijk
+			\text{Principe van Le Châtelier}
+			& Systeem compenseert uitwendige stress gedeeltelijk \\
+			& $\bullet$ Concentratieverandering \\
+			& $\bullet$ Druk \& volumeverandering \\
+			& $\bullet$ Temperatuursverandering $\rightarrow$ K verandert \\
+			& $\bullet$ Katalysator \& inert gas hebben geen invloed \\
 		
 		%Zuren en basen
 		\hline
 		pH=-\log[H^+]=-\log[H_3O^+] \\
+		pOH=-\log[OH^-]=14-pH\\
 		K_a=\cfrac{[H^+][A^-]}{[HA]}
-		& \varitem{K_a}{Aciditeitsconstante (\bm{$pK_a$}=$-\log K_a$)} \\
+		& \varitem{K_a}{Aciditeitsconstante (\bm{$pK_a$}=$-\log K_a$)} \\K_b=\cfrac{[OH^-][B^+]}{[B]}
+		& \varitem{K_a}{Aciditeitsconstante (\bm{$pK_b$}=$-\log K_b$)} \\
+		K_a K_b=K_w
+		& \varitem{K_w}{Dissociatieconstante van water}\\
+		pK_a+pK_b=pK_w
+		& $\text{K}_w=[H^+][OH^-]=10^{-14}$ bij 25\degree C \\
+		
+		%Zuur-base evenwichten en oplosbaarheid
+		K_{sp}=[C]^d [D]^d
+		& \varitem{K_{sp}}{Oplosbaarheidsproduct: beschrijf het oplossen van een ionische verbinding in water} \\
+		Q=[C]^c_0 [D]^d_0
+		& \varitem{Q}{Reactiequotiënt, K$_{sp}$ met actuele concentraties} \\
+		& \varitem{\bm{[X]_0}}{Concentratie voor reactie} \\
+		& $\bullet$ Q<K$_{sp}$: Onverzadigde oplossing   $\rightarrow$ Geen neerslag \\
+		& $\bullet$ Q<K$_{sp}$: Verzadigde oplossing     $\rightarrow$ Net geen neerslag \\
+		& $\bullet$ Q<K$_{sp}$: Oververzadigde oplossing $\rightarrow$ Neerslag onstaat \\
+		
+		%Redoxreacties en elektrochemie
+		\hline
+		\text{Nernst: } E=E^0 - \cfrac{RT}{nF} \log Q
+		&
 	\end{tabular}
 \end{center}
 
