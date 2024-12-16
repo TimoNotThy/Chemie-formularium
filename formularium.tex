@@ -40,127 +40,124 @@
 \newcommand{\varitem}[2]{\textbf{\(\mathbf{#1}\)} #2}
 
 \begin{document}
-\maketitle
-\newline
-\\ % Verwijder volgende zin op het einde van het semester!
-Dit document is nog niet klaar, als we nieuwe formules zien zal ik deze toevoegen.
-
-
-\begin{center}
-	\begin{tabular}{>{$}l<{$} | p{0.55\textwidth}} % Left column for formula, right for variables and explanations
-		\textbf{Formule} & \textbf{Variabelen en uitleg} \\
-		\hline
-		\text{Verdunningsregel: } M_i V_i = M_f V_f
-		& \varitem{M}{Molariteit [mol/l]} \\
-		& \varitem{m}{Molaliteit [mol/kg]} \\
-		PV=nRT
-		& \varitem{P}{Druk} \\
-		& \varitem{V}{Volume} \\
-		& \varitem{R}{Gasconstante} \\
-		& \varitem{T}{Temperatuur [K]} \\
-		
-		\hline% \textbf{Thermochemie} \\
-		
-		\Delta\text{U}=q+\text{w} 
-		& \varitem{\Delta U}{Verandering van interne energie} \\
-		& \varitem{q}{warmteuitwisseling met omgeving \newline (q>0: warmte van omgeving in systeem)} \\
-		& \varitem{w}{Arbeid verricht op/door het systeem \newline (w>0: arbeid op systeem)} \\
-		
-		\text{w}=-P\Delta V 
-		& \varitem{\Delta V}{Volumeverandering} \\
-		
-		\text{Wet van Hess:}
-		& \varitem{\Delta H^0_{rxn}}{Reactieenthalpie} \\
-		\Delta H^0_{rxn}\! =\! \sum i\Delta H^0_f(prod.)\! -\! \sum j\Delta H^0_f(reag.) 
-		& ($\Delta \text{H}^0_{rxn}$>0: endotherme reactie) \\ %Uitleg bij vorige maar appart gezet voor layout purposes
-		& \varitem{H^0_f}{Standaardvormingsenthalpie} \\
-		& \varitem{i, j}{coefficiënten in reactievergelijking} \\
-		
-		q=ms \Delta T 
-		& \varitem{m}{massa [g]} \\
-		& \varitem{s}{Specifieke warmte [$\frac{J}{g \degree C}$]} \\
-		
-		
-		q=C \Delta T 
-		& \varitem{\Delta T}{Temperatuurverandering} \\
-		& \varitem{C}{Warmtecapaciteit} \\
-		q_{sys}=0 \Leftrightarrow q_{rxn}+q_{cal}+q_{opl}=0 \\
-		q_{rxn}=n\Delta H^0_{rxn} \\
-		%Kwantumtheorie
-		
-		\hline
-		
-		E=h \upnu = h \cfrac{c}{\lambda} 
-		& \varitem{E}{Energie [J]} \\
-		& \varitem{h}{constante van Planck = $6.62 \cdot 10^{-34}$Js} \\
-		& \varitem{\bm{\upnu}}{frequentie [Hz]} \\
-		& \varitem{c}{Lichtsnelheid = $3 \cdot 10^8 \frac{m}{s}$} \\
-		& \varitem{\bm{\lambda}}{Golflengte [m]} \\
-		
-		E_{kin,e^-}=h \upnu - W &
-		\varitem{W}{Werkfunctie: maat voor hoe sterk $e^{-}$ in metaal worden vastgehouden} \\
-		
-		\text{De Broglie: }
-		\lambda=\frac{h}{p} = \frac{h}{mu}
-		& \varitem{p}{Impuls [$\frac{kg \cdot m}{s}$]} \\
-		& \varitem{m}{Massa bewegend deeltje [kg]} \\
-		& \varitem{u}{Snelheid} \\
-		
-		\hline
-		
-		
-		\text{Wet van Dalton: }P_i=y_iP_{tot}
-		& \varitem{P_i}{Partieeldruk} \\
-		& \varitem{y_i}{Molfractie \textbf{gas} [\%]} \\
-		
-		\text{Wet van Raoult: }P_i=x_iP_i^0
-		& \varitem{x_i}{Molfractie \textbf{vloeistof} [\%]} \\
-		& \varitem{P^0_i}{Dampdruk} \\
-		
-		\text{Wet van Henry: }P_i=x_iH_i=\cfrac{C_i}{k}
-		& \varitem{C_i}{Concentratie} \\
-		& \varitem{H_i}{Henry constante} \\
-		& \varitem{k}{gegeven constante bij bep. temp} \\
-	
-	\end{tabular}
-	\newpage
-	\begin{tabular}{>{$}l<{$} | p{0.55\textwidth}}		
-		\hline
-		%colligatieve eigenschappen
-		\Delta T_b=iK_bm
-		& \varitem{\Delta T_b}{Kookpuntsverhoging} \\
-		\Delta T_f=iK_fm
-		& \varitem{\Delta T_f}{Vriespuntsverlaging} \\
-		& \varitem{i}{Van 't Hoff factor: aantal opgeloste deeltjes waarin een verbinding voorkomt in oplossing} \\
-		& \varitem{K_b, K_f}{karakteristiek van het oplosmiddel} \\
-		& \varitem{m}{Molaliteit [mol/kg]} \\
-		
-		\pi = i M\! RT
-		& \varitem{\bm{\pi}}{Osmotische druk} \\
-		\Delta P=x_{\text{opgeloste stof}}\ P^0_{\text{oplosmiddel}}
-		& \varitem{\Delta P}{Dampdrukverlaging} \\
-		%& \varitem{P^0}{Druk} \\
-		
-		%Kinetica
-		\hline
-		v=k[A]^x[B]^y
-		& aA+bB $\rightleftharpoons$ cC+dD \\
-		& \varitem{v}{Reactiesnelheid [M/s]} \\
-		& \varitem{k}{Snelheidsconstante [Eenheid afh. van reactieorde]} \\
-		
-		\text{Arrhenius vergelijking:}
-		& \textbf{x}=a, \textbf{y}=b indien elementaire stap \\
-		k=Ae^{\frac{-\! Ea}{RT}}
-		& \varitem{E_a}{Activeringsenergie [kJ/mol]} \\
-		
-		%Chemisch evenwicht
-		\hline
-		K=\dfrac{[C]^c[D]^d}{[A]^a[B]^b}
-		& \varitem{K}{Evenwichtsconstante (K>1: Evenwicht naar rechts)} \\
-		& \varitem{\bm{[X]}}{Concentratie van stof X [M]\! =\! [mol/l]} \\
-		& \varitem{Q}{Reactieconstante, K met actuele concentraties} \\
-		& (Q>K: systeem naar links voor evenwicht) \\
-		
+	\maketitle	
+	\begin{center}
+		\begin{tabular}{>{$}l<{$} | p{0.55\textwidth}} % Left column for formula, right for variables and explanations
+			\textbf{Formule} & \textbf{Variabelen en uitleg} \\
+			\hline
+			\text{Verdunningsregel: } M_i V_i = M_f V_f
+			& \varitem{M}{Molariteit [mol/l]} \\
+			& \varitem{m}{Molaliteit [mol/kg]} \\
+			PV=nRT
+			& \varitem{P}{Druk} \\
+			& \varitem{V}{Volume} \\
+			& \varitem{R}{Gasconstante} \\
+			& \varitem{T}{Temperatuur [K]} \\
+			
+			\hline% \textbf{Thermochemie} \\
+			
+			\Delta\text{U}=q+\text{w} 
+			& \varitem{\Delta U}{Verandering van interne energie} \\
+			& \varitem{q}{warmteuitwisseling met omgeving \newline (q>0: warmte van omgeving in systeem)} \\
+			& \varitem{w}{Arbeid verricht op/door het systeem \newline (w>0: arbeid op systeem)} \\
+			
+			\text{w}=-P\Delta V 
+			& \varitem{\Delta V}{Volumeverandering} \\
+			
+			\text{Wet van Hess:}
+			& \varitem{\Delta H^0_{rxn}}{Reactieenthalpie} \\
+			\Delta H^0_{rxn}\! =\! \sum i\Delta H^0_f(prod.)\! -\! \sum j\Delta H^0_f(reag.) 
+			& ($\Delta \text{H}^0_{rxn}$>0: endotherme reactie) \\ %Uitleg bij vorige maar appart gezet voor layout purposes
+			& \varitem{H^0_f}{Standaardvormingsenthalpie} \\
+			& \varitem{i, j}{coefficiënten in reactievergelijking} \\
+			
+			q=ms \Delta T 
+			& \varitem{m}{massa [g]} \\
+			& \varitem{s}{Specifieke warmte [$\frac{J}{g \degree C}$]} \\
+			
+			
+			q=C \Delta T 
+			& \varitem{\Delta T}{Temperatuurverandering} \\
+			& \varitem{C}{Warmtecapaciteit} \\
+			q_{sys}=0 \Leftrightarrow q_{rxn}+q_{cal}+q_{opl}=0 \\
+			q_{rxn}=n\Delta H^0_{rxn} \\
+			%Kwantumtheorie
+			
+			\hline
+			
+			E=h \upnu = h \cfrac{c}{\lambda} 
+			& \varitem{E}{Energie [J]} \\
+			& \varitem{h}{constante van Planck = $6.62 \cdot 10^{-34}$Js} \\
+			& \varitem{\bm{\upnu}}{frequentie [Hz]} \\
+			& \varitem{c}{Lichtsnelheid = $3 \cdot 10^8 \frac{m}{s}$} \\
+			& \varitem{\bm{\lambda}}{Golflengte [m]} \\
+			
+			E_{kin,e^-}=h \upnu - W &
+			\varitem{W}{Werkfunctie: maat voor hoe sterk $e^{-}$ in metaal worden vastgehouden} \\
+			
+			\text{De Broglie: }
+			\lambda=\frac{h}{p} = \frac{h}{mu}
+			& \varitem{p}{Impuls [$\frac{kg \cdot m}{s}$]} \\
+			& \varitem{m}{Massa bewegend deeltje [kg]} \\
+			& \varitem{u}{Snelheid} \\
+			
+			\hline
+			
+			
+			\text{Wet van Dalton: }P_i=y_iP_{tot}
+			& \varitem{P_i}{Partieeldruk} \\
+			& \varitem{y_i}{Molfractie \textbf{gas} [\%]} \\
+			
+			\text{Wet van Raoult: }P_i=x_iP_i^0
+			& \varitem{x_i}{Molfractie \textbf{vloeistof} [\%]} \\
+			& \varitem{P^0_i}{Dampdruk} \\
+			
+			\text{Wet van Henry: }P_i=x_iH_i=\cfrac{C_i}{k}
+			& \varitem{C_i}{Concentratie} \\
+			& \varitem{H_i}{Henry constante} \\
+			& \varitem{k}{gegeven constante bij bep. temp} \\
+			\hline
+			
+		\end{tabular}
+		\newpage
+		\begin{tabular}{>{$}l<{$} | p{0.55\textwidth}}
+			\textbf{Formule} & \textbf{Variabelen en uitleg} \\
+			\hline	
+			%colligatieve eigenschappen
+			\Delta T_b=iK_bm
+			& \varitem{\Delta T_b}{Kookpuntsverhoging} \\
+			\Delta T_f=iK_fm
+			& \varitem{\Delta T_f}{Vriespuntsverlaging} \\
+			& \varitem{i}{Van 't Hoff factor: aantal opgeloste deeltjes waarin een verbinding voorkomt in oplossing} \\
+			& \varitem{K_b, K_f}{karakteristiek van het oplosmiddel} \\
+			& \varitem{m}{Molaliteit [mol/kg]} \\
+			
+			\pi = i M\! RT
+			& \varitem{\bm{\pi}}{Osmotische druk} \\
+			\Delta P=x_{\text{opgeloste stof}}\ P^0_{\text{oplosmiddel}}
+			& \varitem{\Delta P}{Dampdrukverlaging} \\
+			%& \varitem{P^0}{Druk} \\
+			
+			%Kinetica
+			\hline
+			v=k[A]^x[B]^y
+			& aA+bB $\rightleftharpoons$ cC+dD \\
+			& \varitem{v}{Reactiesnelheid [M/s]} \\
+			& \varitem{k}{Snelheidsconstante [Eenheid afh. van reactieorde]} \\
+			
+			\text{Arrhenius vergelijking:}
+			& \textbf{x}=a, \textbf{y}=b indien elementaire stap \\
+			k=Ae^{\frac{-\! Ea}{RT}}
+			& \varitem{E_a}{Activeringsenergie [kJ/mol]} \\
+			
+			%Chemisch evenwicht
+			\hline
+			K=\dfrac{[C]^c[D]^d}{[A]^a[B]^b}
+			& \varitem{K}{Evenwichtsconstante (K>1: Evenwicht naar rechts)} \\
+			& \varitem{\bm{[X]}}{Concentratie van stof X [M]\! =\! [mol/l]} \\
+			& \varitem{Q}{Reactieconstante, K met actuele concentraties} \\
+			& (Q>K: systeem naar links voor evenwicht) \\
+			
 			%Niet echt een formule maar wel belangrijk
 			\text{Principe van Le Châtelier}
 			& Systeem compenseert uitwendige stress gedeeltelijk \\
@@ -168,41 +165,44 @@ Dit document is nog niet klaar, als we nieuwe formules zien zal ik deze toevoege
 			& $\bullet$ Druk \& volumeverandering \\
 			& $\bullet$ Temperatuursverandering $\rightarrow$ K verandert \\
 			& $\bullet$ Katalysator \& inert gas hebben geen invloed \\
-		
-		%Zuren en basen
-		\hline
-		pH=-\log[H^+]=-\log[H_3O^+] \\
-		pOH=-\log[OH^-]=14-pH\\
-		K_a=\cfrac{[H^+][A^-]}{[HA]}
-		& \varitem{K_a}{Aciditeitsconstante (\bm{$pK_a$}=$-\log K_a$)} \\K_b=\cfrac{[OH^-][B^+]}{[B]}
-		& \varitem{K_b}{Basiciteitsconstante (\bm{$pK_b$}=$-\log K_b$)} \\
-		K_a K_b=K_w
-		& \varitem{K_w}{Dissociatieconstante van water}\\
-		pK_a+pK_b=pK_w
-		& $\text{K}_w=[H^+][OH^-]=10^{-14}$ bij 25\degree C \\
-		
-		%Zuur-base evenwichten en oplosbaarheid
-		K_{sp}=[C]^d [D]^d
-		& \varitem{K_{sp}}{Oplosbaarheidsproduct: beschrijf het oplossen van een ionische verbinding in water} \\
-		Q=[C]^c_0 [D]^d_0
-		& \varitem{Q}{Reactiequotiënt, K$_{sp}$ met actuele concentraties} \\
-		& \varitem{\bm{[X]_0}}{Concentratie voor reactie} \\
-		& $\bullet$ Q<K$_{sp}$: Onverzadigde oplossing   $\rightarrow$ Geen neerslag \\
-		& $\bullet$ Q<K$_{sp}$: Verzadigde oplossing     $\rightarrow$ Net geen neerslag \\
-		& $\bullet$ Q<K$_{sp}$: Oververzadigde oplossing $\rightarrow$ Neerslag onstaat \\
-		
-		%Redoxreacties en elektrochemie
-		\hline
-		\text{Nernst: } E=E^0 - \cfrac{RT}{nF} \log Q
-		& \varitem{F}{Faraday constante: lading 1 mol e$^-$} \\
-		\underset{\text{Anode: oxidatie}}   {\underrightarrow{A(s)\ \Big|\ A^{a+}\ (xM)}}
-		\ \Big|\Big|\ 
-		\underset{\text{Kathode: reductie}} {\underrightarrow{B^{b+}\ (yM)\ \Big|\ B(s)}}
-		& Notatie celdiagram\\
-		E^0_{cel}=\cfrac{RT}{nF} \log K
-		& \varitem{E^0_{cel}}{Celpotentiaal ($E^0_{cel}$>1: Formatie producten)} \\
-		E^0_{cel}=E^0_{ox}+E^0_{red}=E^0_{red, anode}+E^0_{red, kathode}
-	\end{tabular}
-\end{center}
-
+			
+			%Zuren en basen
+			\hline
+			pH=-\log[H^+]=-\log[H_3O^+] \\
+			pOH=-\log[OH^-]=14-pH\\
+			K_a=\cfrac{[H^+][A^-]}{[HA]}
+			& \varitem{K_a}{Aciditeitsconstante (\bm{$pK_a$}=$-\log K_a$)} \\K_b=\cfrac{[OH^-][B^+]}{[B]}
+			& \varitem{K_b}{Basiciteitsconstante (\bm{$pK_b$}=$-\log K_b$)} \\
+			K_a K_b=K_w
+			& \varitem{K_w}{Dissociatieconstante van water}\\
+			pK_a+pK_b=pK_w
+			& $\text{K}_w=[H^+][OH^-]=10^{-14}$ bij 25\degree C \\
+			
+			%Zuur-base evenwichten en oplosbaarheid
+			K_{sp}=[C]^d [D]^d
+			& \varitem{K_{sp}}{Oplosbaarheidsproduct: beschrijf het oplossen van een ionische verbinding in water} \\
+			Q=[C]^c_0 [D]^d_0
+			& \varitem{Q}{Reactiequotiënt, K$_{sp}$ met actuele concentraties} \\
+			& \varitem{\bm{[X]_0}}{Concentratie voor reactie} \\
+			& $\bullet$ Q<K$_{sp}$: Onverzadigde oplossing   $\rightarrow$ Geen neerslag \\
+			& $\bullet$ Q<K$_{sp}$: Verzadigde oplossing     $\rightarrow$ Net geen neerslag \\
+			& $\bullet$ Q<K$_{sp}$: Oververzadigde oplossing $\rightarrow$ Neerslag onstaat \\
+			
+			%Redoxreacties en elektrochemie
+			\hline
+			\text{Nernst: } E=E^0 - \cfrac{RT}{nF} \log Q
+			& \varitem{F}{Faraday constante: lading 1 mol e$^-$} \\
+			\underset{\text{Anode: oxidatie}}   {\underrightarrow{A(s)\ \Big|\ A^{a+}\ (xM)}}
+			\ \Big|\Big|\ 
+			\underset{\text{Kathode: reductie}} {\underrightarrow{B^{b+}\ (yM)\ \Big|\ B(s)}}
+			& Notatie celdiagram\\
+			E^0_{cel}=\cfrac{RT}{nF} \log K
+			& \varitem{E^0_{cel}}{Celpotentiaal ($E^0_{cel}$>1: Formatie producten)} \\
+			E^0_{cel}=E^0_{ox}+E^0_{red}=E^0_{red, anode}+E^0_{red, kathode}
+			& \varitem{E^0_{red}}{Reductiepotentiaal (afleesbaar in de tabel)} \\
+			& \varitem{E^0_{ox}}{Oxidatiepotentiaal $E^0_{ox}=-E^0_{red}$} \\
+			\hline
+		\end{tabular}
+	\end{center}
+	
 \end{document}
